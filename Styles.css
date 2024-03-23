@@ -1,0 +1,535 @@
+body{
+ background-image: url(https://img.freepik.com/premium-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_236836-17315.jpg);
+
+}
+.button-container {
+    display: flex;
+    background-color: #171010;
+    width: 270px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(94, 94, 94, 0.35) 0px 5px 15px,
+      rgba(122, 122, 122, 0.5) 5px 10px 15px;
+  }
+  
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  
+  header {
+    margin: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    padding:  0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0); /* เพิ่มเงาดูนูน */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+      justify-items: center;
+      align-items: center;
+      border-radius: 20px;
+      margin-bottom: 50px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #000000;
+}
+
+
+
+/* 3D tower loader made by: csozi | Website: www.csozi.hu*/
+.spinner {
+  width: 30.4px;
+  height: 30.4px;
+  --clr: #ffffff;
+  --clr-alpha: rgba(190, 190, 190, 0.5);
+  animation: spinner 2.6s infinite ease;
+  transform-style: preserve-3d;
+  position: relative;
+  left : 1080px;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-19.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(19.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(60deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(60deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(60deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+
+
+  
+/* The hero image */
+.hero-image {
+
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+  } 
+img{
+  width: 360px;
+  height: 470px;
+  position: absolute;
+  top: -122px;
+  right : 200px;
+}
+
+  body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://iconic-episode-417312.firebaseapp.com/wall.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-family: monospace;
+  font-size: 35px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+ 
+
+ .animated-button {
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  gap: 4px;
+  padding: 7px 27px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #000000;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #ffffff;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 2px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #3f3f3f;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #000000;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 8px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #000000;
+}
+
+.animated-button:active {
+  scale: 1;
+  box-shadow: 0 0 0 4px rgb(0, 0, 0);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.Videos{
+  font-family: cursive;
+  font-size: 40px;
+  position: absolute;
+  left: 170px;
+  color: rgb(6, 0, 113);
+}
+
+.Album{
+  font-family: cursive;
+  font-size: 40px;
+  position: absolute;
+  right: 170px;
+  color: rgb(6, 0, 113);
+}
+
+.hero-image1{
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-color: #ffffff;
+  
+   /* Set a specific height */
+   height: 20%;
+   width: 100%;
+   position: relative;; 
+ }
+
+ h1{
+  color: #71717127;
+  text-align: center;
+  justify-items: center;
+  font-family: cursive  ;
+ }
+
+ p{
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  font-family: monospace;
+ }
+
+ .card {
+  width: 300px;
+  height: 400px;
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnBreTg5c3I4NXlvOGp5azR0dnpiczliYWp4NmIxOGJhdndkbXp2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  left: 200px;
+  transform: translateY(35px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #262626, #a3a3a3);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: #4a4a4a;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.card-button:hover {
+  background-color: #404040;
+}
+
+
+
+.card1 {
+  width: 300px;
+  height: 400px;
+  background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnBreTg5c3I4NXlvOGp5azR0dnpiczliYWp4NmIxOGJhdndkbXp2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  left: 200px;
+  transform: translateY(35px);
+}
+
+.card1:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #FF5F6D, #FF9671);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.card1-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card1-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card1-description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.card1-button {
+  padding: 10px 20px;
+  background-color: #FF5F6D;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card1-button:hover {
+  background-color: #FF3A4C;
+}
+
+.img{
+  width: 20%;
+
+}
+
+.hero-image2{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-color: #ffffff;
+  /* Set a specific height */
+  height: 350%;
+  width: 45%;
+  position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: -10px;
+}
+.hero-image3{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-color: #ffffff;
+  /* Set a specific height */
+  height: 100%;
+  width: 90%;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  left: 912px;
+}
+
+.t{
+    color: #ffffff;
+    position: relative;
+    left: 450px;
+}
