@@ -533,3 +533,6 @@ img{
     position: relative;
     left: 450px;
 }
+html{
+     -webkit-text-size-adjust: none;
+}
